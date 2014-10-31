@@ -7,6 +7,10 @@ Roddy           Eldred            roddy.el@gmail.com      Ruby Immersive
 Martha          Berner            martha@gschool.it       Time travel for beginners
 Kofi            Thomas            k.thomas@hotmail.com    Ruby Immersive"
 
+# When I paste this method into IRB, it has a total meltdown
+# Indentation not good/readable
+# Make a new version that I can paste into IRB and see it work
+
 def formatdata softtabbeddata
 	arrayoflines = softtabbeddata.split("\n")
 	arrayofarrays = []
