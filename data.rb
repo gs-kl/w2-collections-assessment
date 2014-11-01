@@ -8,21 +8,21 @@ Martha          Berner            martha@gschool.it       Time travel for beginn
 Kofi            Thomas            k.thomas@hotmail.com    Ruby Immersive"
 
 def formatdata softtabbeddata
-	arrayoflines = softtabbeddata.split("\n")
-	arrayofarrays = []
-	arrayoflines.each do |datastring|
-		dataarray = datastring.split(/\s{2,}/)	
-		arrayofarrays.push(dataarray)
-	end
-	arrayofhashes = arrayofarrays.map do |a|
-		{
-		first_name: a[0],
-		last_name: a[1],
-		email: a[2],
-		favorite_book: a[3]
-		}
-	end
-	print arrayofhashes
+  arrayoflines = softtabbeddata.split("\n")
+  arrayofarrays = []
+  arrayoflines.each do |datastring|
+    dataarray = datastring.split(/\s{2,}/)  
+    arrayofarrays.push(dataarray)
+  end
+  arrayofhashes = arrayofarrays.map do |a|
+    {
+    first_name: a[0],
+    last_name: a[1],
+    email: a[2],
+    favorite_book: a[3]
+    }
+  end
+  print arrayofhashes
 end
 
 formatdata data
